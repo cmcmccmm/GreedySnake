@@ -1,0 +1,7 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="GreedySnakeCocos2d" EntryPointType="GreedySnakeCocos2d.Game1" RuntimeVersion="3.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="GreedySnakeCocos2d" Source="GreedySnakeCocos2d.dll" />
+    <AssemblyPart x:Name="cocos2d-xna" Source="cocos2d-xna.dll" />
+    <AssemblyPart x:Name="cocos2d.Framework" Source="cocos2d.Framework.dll" />
+  </Deployment.Parts>
+</Deployment>

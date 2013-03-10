@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>HelloWorld.png</Source>
+      <Name>HelloWorld</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\HelloWorld.xnb</Output>
+      <Time>2013-03-10T12:18:26.3748599+08:00</Time>
+    </Item>
+    <Item>
+      <Source>CloseNormal.png</Source>
+      <Name>CloseNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\CloseNormal.xnb</Output>
+      <Time>2013-03-10T12:18:26.3728598+08:00</Time>
+    </Item>
+    <Item>
+      <Source>CloseSelected.png</Source>
+      <Name>CloseSelected</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\CloseSelected.xnb</Output>
+      <Time>2013-03-10T12:18:26.3738599+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\OpenXLive.jpg</Source>
+      <Name>images\OpenXLive</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\OpenXLive.xnb</Output>
+      <Time>2013-03-10T12:18:26.3718598+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Achievements.png</Source>
+      <Name>images\Achievements</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Achievements.xnb</Output>
+      <Time>2013-03-10T12:18:26.3638593+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Achievements1.png</Source>
+      <Name>images\Achievements1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Achievements1.xnb</Output>
+      <Time>2013-03-10T12:18:26.3648594+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Leaderboards.png</Source>
+      <Name>images\Leaderboards</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Leaderboards.xnb</Output>
+      <Time>2013-03-10T12:18:26.3678595+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Leaderboards1.png</Source>
+      <Name>images\Leaderboards1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Leaderboards1.xnb</Output>
+      <Time>2013-03-10T12:18:26.3678595+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lobby.png</Source>
+      <Name>images\Lobby</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Lobby.xnb</Output>
+      <Time>2013-03-10T12:18:26.3688596+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lobby1.png</Source>
+      <Name>images\Lobby1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Lobby1.xnb</Output>
+      <Time>2013-03-10T12:18:26.3698596+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\background\MainMenu.png</Source>
+      <Name>images\background\MainMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\background\MainMenu.xnb</Output>
+      <Time>2013-03-10T12:56:09.2762905+08:00</Time>
+    </Item>
+    <Item>
+      <Source>fonts\Arial.spritefont</Source>
+      <Name>fonts\Arial</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\fonts\Arial.xnb</Output>
+      <Time>2013-03-10T12:18:26.3608591+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\menuItem\exitItem.png</Source>
+      <Name>images\menuItem\exitItem</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\menuItem\exitItem.xnb</Output>
+      <Time>2013-03-10T16:35:58.0287737+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\menuItem\startItem.png</Source>
+      <Name>images\menuItem\startItem</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\menuItem\startItem.xnb</Output>
+      <Time>2013-03-10T16:35:11.9871403+08:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{B78E2D09-ED18-4E1D-9745-13005DA2EA2B}</ContentProjectGUID>
+      <TargetPlatform>WindowsPhone</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2dContent\</RootDirectory>
+      <LoggerRootDirectory>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+08:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+08:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+08:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+08:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+08:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+08:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-02-25T13:00:30.6890266+08:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

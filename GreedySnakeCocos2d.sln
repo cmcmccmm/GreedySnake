@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreedySnakeCocos2d", "GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d.csproj", "{C3505D46-BAFB-4D92-984C-5D1C67F4B2D9}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "GreedySnakeCocos2dContent", "GreedySnakeCocos2d\GreedySnakeCocos2dContent\GreedySnakeCocos2dContent.contentproj", "{B78E2D09-ED18-4E1D-9745-13005DA2EA2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3505D46-BAFB-4D92-984C-5D1C67F4B2D9}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{C3505D46-BAFB-4D92-984C-5D1C67F4B2D9}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{C3505D46-BAFB-4D92-984C-5D1C67F4B2D9}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{C3505D46-BAFB-4D92-984C-5D1C67F4B2D9}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{C3505D46-BAFB-4D92-984C-5D1C67F4B2D9}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{C3505D46-BAFB-4D92-984C-5D1C67F4B2D9}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{B78E2D09-ED18-4E1D-9745-13005DA2EA2B}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{B78E2D09-ED18-4E1D-9745-13005DA2EA2B}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
