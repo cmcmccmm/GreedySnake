@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using cocos2d;
+using GreedySnakeCocos2d.Classes;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 
@@ -46,8 +47,9 @@ namespace GreedySnakeCocos2d
             pDirector.animationInterval = 1.0 / 60;
 
             // create a scene. it's an autorelease object
-            CCScene pScene = CCScene.node();
-            pScene.addChild(GreedySnakeCocos2d.Classes.MainMenu.node());
+            //CCScene pScene = CCScene.node();
+            //pScene.addChild(GreedySnakeCocos2d.Classes.MainMenu.node());
+            GestureScene pScene = new GestureScene();
 
             //run
             pDirector.runWithScene(pScene);

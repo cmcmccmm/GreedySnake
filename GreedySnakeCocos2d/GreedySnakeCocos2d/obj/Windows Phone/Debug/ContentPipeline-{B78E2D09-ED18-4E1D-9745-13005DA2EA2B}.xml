@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\HelloWorld.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\HelloWorld.xnb</Output>
       <Time>2013-03-10T12:18:26.3748599+08:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\CloseNormal.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\CloseNormal.xnb</Output>
       <Time>2013-03-10T12:18:26.3728598+08:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\CloseSelected.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\CloseSelected.xnb</Output>
       <Time>2013-03-10T12:18:26.3738599+08:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\OpenXLive.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\OpenXLive.xnb</Output>
       <Time>2013-03-10T12:18:26.3718598+08:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Achievements.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Achievements.xnb</Output>
       <Time>2013-03-10T12:18:26.3638593+08:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Achievements1.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Achievements1.xnb</Output>
       <Time>2013-03-10T12:18:26.3648594+08:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Leaderboards.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Leaderboards.xnb</Output>
       <Time>2013-03-10T12:18:26.3678595+08:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Leaderboards1.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Leaderboards1.xnb</Output>
       <Time>2013-03-10T12:18:26.3678595+08:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Lobby.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Lobby.xnb</Output>
       <Time>2013-03-10T12:18:26.3688596+08:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Lobby1.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Lobby1.xnb</Output>
       <Time>2013-03-10T12:18:26.3698596+08:00</Time>
     </Item>
     <Item>
@@ -97,17 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\background\MainMenu.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\background\MainMenu.xnb</Output>
       <Time>2013-03-10T12:56:09.2762905+08:00</Time>
-    </Item>
-    <Item>
-      <Source>fonts\Arial.spritefont</Source>
-      <Name>fonts\Arial</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\fonts\Arial.xnb</Output>
-      <Time>2013-03-10T12:18:26.3608591+08:00</Time>
     </Item>
     <Item>
       <Source>images\menuItem\exitItem.png</Source>
@@ -115,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\menuItem\exitItem.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\menuItem\exitItem.xnb</Output>
       <Time>2013-03-10T16:35:58.0287737+08:00</Time>
     </Item>
     <Item>
@@ -124,8 +115,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\menuItem\startItem.xnb</Output>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\menuItem\startItem.xnb</Output>
       <Time>2013-03-10T16:35:11.9871403+08:00</Time>
+    </Item>
+    <Item>
+      <Source>fonts\Arial.spritefont</Source>
+      <Name>fonts\Arial</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\fonts\Arial.xnb</Output>
+      <Time>2013-03-10T12:18:26.3608591+08:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -134,10 +134,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2dContent\</RootDirectory>
-      <LoggerRootDirectory>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\obj\Windows Phone\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\C\GreedySnakeCocos2d\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2dContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\AppDelegate.cs" />
+    <Compile Include="Classes\GestureLayer.cs" />
+    <Compile Include="Classes\GestureScene.cs" />
     <Compile Include="Classes\HelloWorldScene.cs" />
     <Compile Include="Classes\GamePlayLayer.cs" />
     <Compile Include="Classes\GamePlayScene.cs" />
