@@ -48,9 +48,9 @@ namespace GreedySnakeCocos2d
 
             // create a scene. it's an autorelease object
             //CCScene pScene = CCScene.node();
-            //pScene.addChild(GreedySnakeCocos2d.Classes.MainMenu.node());
-            GestureScene pScene = new GestureScene();
-
+            //pScene.addChild(GreedySnakeCocos2d.Classes.MainMenuLayer.node());
+            //GestureScene pScene = new GestureScene();
+            CCScene pScene = new MainMenuScene();
             //run
             pDirector.runWithScene(pScene);
 

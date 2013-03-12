@@ -21,7 +21,5 @@ namespace GreedySnakeCocos2d.Classes
             this.addChild(colorLayer);
             this.addChild(GamePlayLayer.node());
         }
-
-       
     }
 }

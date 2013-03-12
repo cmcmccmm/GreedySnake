@@ -67,12 +67,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\AppDelegate.cs" />
+    <Compile Include="Classes\BackgroundLayer.cs" />
+    <Compile Include="Classes\GameOverScene.cs" />
+    <Compile Include="Classes\GameSetting.cs" />
     <Compile Include="Classes\GestureLayer.cs" />
     <Compile Include="Classes\GestureScene.cs" />
     <Compile Include="Classes\HelloWorldScene.cs" />
     <Compile Include="Classes\GamePlayLayer.cs" />
     <Compile Include="Classes\GamePlayScene.cs" />
-    <Compile Include="Classes\MainMenu.cs" />
+    <Compile Include="Classes\MainMenuLayer.cs" />
+    <Compile Include="Classes\MainMenuScene.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>

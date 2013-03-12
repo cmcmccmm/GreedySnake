@@ -6,26 +6,15 @@ using cocos2d;
 
 namespace GreedySnakeCocos2d.Classes
 {
-    class MainMenu : CCLayer
+    class MainMenuLayer : CCLayer
     {
         public override bool init()
         {
             if (!base.init())
                 return false;
 
-            // Set the orientation of the phone.
-            CCDirector.sharedDirector().deviceOrientation = ccDeviceOrientation.kCCDeviceOrientationPortrait;
-
-            this.m_bIsTouchEnabled = true;
-            
-            // Get the width and the height of the phone.
             float width = CCDirector.sharedDirector().getWinSize().width;
             float height = CCDirector.sharedDirector().getWinSize().height;
-
-            // Set the background of the screen.
-            CCSprite background = CCSprite.spriteWithFile(@"images/background/MainMenu");
-            background.position = new CCPoint(width / 2, height / 2);
-            this.addChild(background);
 
             // List the menu item in the menu.
             CCMenuItemImage startItem = CCMenuItemImage.itemFromNormalImage(@"images/menuItem/startItem", @"images/menuItem/startItem", this, startCallBack);
@@ -42,7 +31,7 @@ namespace GreedySnakeCocos2d.Classes
 
         public static new CCLayer node()
         {
-            MainMenu mm = new MainMenu();
+            MainMenuLayer mm = new MainMenuLayer();
 
             if (!mm.init())
             {
@@ -56,7 +45,7 @@ namespace GreedySnakeCocos2d.Classes
         void startCallBack(object sender)
         {
             GamePlayScene playScene = new GamePlayScene();
-            CCDirector.sharedDirector().pushScene(playScene);
+            CCDirector.sharedDirector().replaceScene(playScene);
         }
 
         // Exit the game when exit item is selected.
