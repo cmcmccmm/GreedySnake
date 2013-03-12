@@ -107,7 +107,9 @@
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="images\Sprite\" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="images\menuItem\exitItem.png">
       <Name>exitItem</Name>
