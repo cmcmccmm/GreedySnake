@@ -20,6 +20,35 @@ namespace GreedySnakeCocos2d.Classes
                 return false;
             }
 
+            // Add the wall to the game field.
+            CCSprite wall;
+
+            for (int i = 0; i < 12; i++)
+            {
+                wall = CCSprite.spriteWithFile("images/Sprite/Wall");
+                wall.position = new CCPoint(20 + i * 40, 180);
+                this.addChild(wall);
+
+                if (i == 0) continue;
+
+                wall = CCSprite.spriteWithFile("images/Sprite/Wall");
+                wall.position = new CCPoint(20, 180 + i * 40);
+                this.addChild(wall);
+            }
+
+            for (int i = 0; i < 11; i++)
+            {
+                wall = CCSprite.spriteWithFile("images/Sprite/Wall");
+                wall.position = new CCPoint(460 - i * 40, 620);
+                this.addChild(wall);
+
+                if (i == 0) continue;
+
+                wall = CCSprite.spriteWithFile("images/Sprite/Wall");
+                wall.position = new CCPoint(460, 620 - i * 40);
+                this.addChild(wall);
+            }
+
             return true;
         }
 

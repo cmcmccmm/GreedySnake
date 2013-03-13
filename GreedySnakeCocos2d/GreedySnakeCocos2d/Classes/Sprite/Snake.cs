@@ -57,7 +57,7 @@ namespace GreedySnakeCocos2d.Classes.Sprite
             bodyList.Add(bodySprite);
 
             bodySprite = CCSprite.spriteWithFile(bodyImageFile);
-            for (int i = 1,; i < length; i++)
+            for (int i = 1; i < length; i++)
             {
                 if (direction == Direction.Up)
                     initPosition.y -= stepLength;

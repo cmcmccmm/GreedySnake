@@ -24,7 +24,8 @@ namespace GreedySnakeCocos2d.Classes
 
         public void initializeGame()
         {
-
+            playerSnake = new PlayerSnake("images/Sprite/PlayerSnakeHead", "images/Sprite/PlayerSnakeBody", 
+                Direction.Left, new CCPoint(220, 380), 5, 40);
         }
 
         // Update the things in the field when called.
@@ -50,6 +51,17 @@ namespace GreedySnakeCocos2d.Classes
             }
 
             return false;
+        }
+
+        // Get the game state.
+        public GameState getGameState()
+        {
+            GameState state = GameState.Playing;
+
+            if (playerSnake.isDead())
+                state = GameState.Lose;
+
+            return state;
         }
     }
 }

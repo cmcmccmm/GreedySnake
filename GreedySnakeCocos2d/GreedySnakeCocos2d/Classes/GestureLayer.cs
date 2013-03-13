@@ -12,7 +12,7 @@ namespace GreedySnakeCocos2d.Classes
      * Author: Tan Tian Xiang
      * Date: 2013.3.10
      */
-    class GestureLayer : CCLayer, Observerable
+    class GestureLayer : CCLayer
     {
         CCLabelTTF title;
 

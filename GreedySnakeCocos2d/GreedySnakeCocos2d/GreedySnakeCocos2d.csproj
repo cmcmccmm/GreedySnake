@@ -78,7 +78,9 @@
     <Compile Include="Classes\GamePlayScene.cs" />
     <Compile Include="Classes\MainMenuLayer.cs" />
     <Compile Include="Classes\MainMenuScene.cs" />
+    <Compile Include="Classes\ObserverPattern.cs" />
     <Compile Include="Classes\Sprite\Food.cs" />
+    <Compile Include="Classes\Sprite\PlayerSnake.cs" />
     <Compile Include="Classes\Sprite\Snake.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\AppManifest.xml">

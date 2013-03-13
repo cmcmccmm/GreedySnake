@@ -127,6 +127,33 @@
       <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\fonts\Arial.xnb</Output>
       <Time>2013-03-10T12:18:26.3608591+08:00</Time>
     </Item>
+    <Item>
+      <Source>images\Sprite\PlayerSnakeBody.png</Source>
+      <Name>images\Sprite\PlayerSnakeBody</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Sprite\PlayerSnakeBody.xnb</Output>
+      <Time>2013-03-13T15:18:34.3142322+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Sprite\PlayerSnakeHead.png</Source>
+      <Name>images\Sprite\PlayerSnakeHead</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Sprite\PlayerSnakeHead.xnb</Output>
+      <Time>2013-03-13T15:18:56.7995183+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Sprite\Wall.png</Source>
+      <Name>images\Sprite\Wall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Sprite\Wall.xnb</Output>
+      <Time>2013-03-13T15:17:29.0384987+08:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{B78E2D09-ED18-4E1D-9745-13005DA2EA2B}</ContentProjectGUID>

@@ -107,9 +107,7 @@
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\Sprite\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="images\menuItem\exitItem.png">
       <Name>exitItem</Name>
@@ -118,6 +116,23 @@
     </Compile>
     <Compile Include="images\menuItem\startItem.png">
       <Name>startItem</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\Sprite\PlayerSnakeBody.png">
+      <Name>PlayerSnakeBody</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\Sprite\PlayerSnakeHead.png">
+      <Name>PlayerSnakeHead</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\Sprite\Wall.png">
+      <Name>Wall</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

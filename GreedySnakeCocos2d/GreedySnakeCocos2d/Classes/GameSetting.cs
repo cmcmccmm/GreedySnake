@@ -10,5 +10,6 @@ namespace GreedySnakeCocos2d.Classes
      */
     class GameSetting
     {
+        
     }
 }
