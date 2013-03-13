@@ -13,7 +13,7 @@ namespace GreedySnakeCocos2d.Classes
      */
     public interface Observer
     {
-        public void update();
+        public void update(object obj);
     }
 
     public interface Observerable

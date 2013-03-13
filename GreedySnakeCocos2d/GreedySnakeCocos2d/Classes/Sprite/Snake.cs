@@ -73,6 +73,25 @@ namespace GreedySnakeCocos2d.Classes.Sprite
             }
         }
 
+        // Get the positions of the body.
+        public List<CCPoint> getPositions()
+        {
+            List<CCPoint> positions = new List<CCPoint>();
+
+            for (int i = 0; i < bodyList.Count; i++)
+            {
+                positions.Add((bodyList[i].position));
+            }
+
+            return positions;
+        }
+
+        // Get the head position.
+        public CCPoint getHeadPosition()
+        {
+            return bodyList[0].position;
+        }
+
         // Set the direction of the snake.
         public void setDirection(Direction d)
         {
@@ -103,6 +122,8 @@ namespace GreedySnakeCocos2d.Classes.Sprite
                 bodyList[0].position.x += stepLength;
             else
                 bodyList[0].position.x -= stepLength;
+
+            this.checkBiteItself();
         }
 
         // Append the snake.
@@ -115,6 +136,15 @@ namespace GreedySnakeCocos2d.Classes.Sprite
             CCSprite newTail = CCSprite.spriteWithFile(bodyImageFile);
             newTail.position = tailPosition;
             bodyList.Add(newTail);
+
+            // Check the snake bite its tail or not.
+            CCPoint headPosition = bodyList[0].position;
+
+            if (headPosition.x == tailPosition.x 
+                && headPosition.y == tailPosition.y)
+            {
+                this.die();
+            }
         }
 
         // Judge the snake die or not.
@@ -127,6 +157,24 @@ namespace GreedySnakeCocos2d.Classes.Sprite
         public void die()
         {
             dead = true;
+        }
+
+        // Check the snake bite it self or not.
+        protected bool checkBiteItself()
+        {
+            CCPoint head = bodyList[0].position;
+
+            for (int i = 1; i < bodyList.Count; i++)
+            {
+                if (head.x == bodyList[i].position.x
+                    && head.y == bodyList[i].position.y)
+                {
+                    this.die();
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }
