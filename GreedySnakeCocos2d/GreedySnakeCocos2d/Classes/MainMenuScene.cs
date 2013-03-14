@@ -12,7 +12,7 @@ namespace GreedySnakeCocos2d.Classes
         {
             base.onEnter();
 
-            this.addChild(BackgroundLayer.node());
+            this.addChild(BackgroundLayer.node("images/background/MainMenu"));
             this.addChild(MainMenuLayer.node());
         }
     }

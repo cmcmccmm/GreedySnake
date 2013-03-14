@@ -18,26 +18,26 @@ namespace GreedySnakeCocos2d.Classes
 
             this.m_bIsTouchEnabled = true;
 
-            // Get the width and the height of the phone.
-            float width = CCDirector.sharedDirector().getWinSize().width;
-            float height = CCDirector.sharedDirector().getWinSize().height;
-
-            // Set the background of the screen.
-            CCSprite background = CCSprite.spriteWithFile(@"images/background/MainMenu");
-            background.position = new CCPoint(width / 2, height / 2);
-            this.addChild(background);
-
             return true;
         }
 
-        public static new CCLayer node()
+        public static CCLayer node(string fileName)
         {
-           BackgroundLayer mm = new BackgroundLayer();
+            BackgroundLayer mm = new BackgroundLayer();
 
             if (!mm.init())
             {
                 mm = null;
             }
+
+            // Get the width and the height of the phone.
+            float width = CCDirector.sharedDirector().getWinSize().width;
+            float height = CCDirector.sharedDirector().getWinSize().height;
+
+            // Set the background of the screen.
+            CCSprite background = CCSprite.spriteWithFile(fileName);
+            background.position = new CCPoint(width / 2, height / 2);
+            mm.addChild(background);
 
             return mm;
         }

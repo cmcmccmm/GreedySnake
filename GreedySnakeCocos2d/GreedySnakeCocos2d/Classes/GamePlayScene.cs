@@ -28,10 +28,9 @@ namespace GreedySnakeCocos2d.Classes
         public override void onEnter()
         {
             base.onEnter();
-            CCLayerColor colorLayer = CCLayerColor.layerWithColor(new ccColor4B(255, 255, 255, 255));
+            CCLayerColor colorLayer = CCLayerColor.layerWithColor(new ccColor4B(181, 230, 29, 255));
             this.addChild(colorLayer);
             this.addChild(GamePlayLayer.node());
-
         }
     }
 }

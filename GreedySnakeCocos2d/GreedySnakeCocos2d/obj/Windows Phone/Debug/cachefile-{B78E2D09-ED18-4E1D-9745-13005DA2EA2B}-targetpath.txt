@@ -1,6 +1,5 @@
 Content\HelloWorld.xnb
 Content\CloseNormal.xnb
-Content\CloseSelected.xnb
 Content\images\OpenXLive.xnb
 Content\images\Achievements.xnb
 Content\images\Achievements1.xnb
@@ -15,3 +14,4 @@ Content\fonts\Arial.xnb
 Content\images\Sprite\PlayerSnakeBody.xnb
 Content\images\Sprite\PlayerSnakeHead.xnb
 Content\images\Sprite\Wall.xnb
+Content\images\CloseSelected.xnb

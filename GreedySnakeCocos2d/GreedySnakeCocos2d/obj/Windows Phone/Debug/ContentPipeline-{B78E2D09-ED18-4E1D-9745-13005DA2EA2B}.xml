@@ -20,15 +20,6 @@
       <Time>2013-03-10T12:18:26.3728598+08:00</Time>
     </Item>
     <Item>
-      <Source>CloseSelected.png</Source>
-      <Name>CloseSelected</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\CloseSelected.xnb</Output>
-      <Time>2013-03-10T12:18:26.3738599+08:00</Time>
-    </Item>
-    <Item>
       <Source>images\OpenXLive.jpg</Source>
       <Name>images\OpenXLive</Name>
       <Importer>TextureImporter</Importer>
@@ -153,6 +144,15 @@
       <Options>None</Options>
       <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Sprite\Wall.xnb</Output>
       <Time>2013-03-13T15:17:29.0384987+08:00</Time>
+    </Item>
+    <Item>
+      <Source>images\CloseSelected.png</Source>
+      <Name>images\CloseSelected</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\CloseSelected.xnb</Output>
+      <Time>2013-03-10T12:18:26.3738599+08:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

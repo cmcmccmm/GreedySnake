@@ -42,7 +42,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="CloseSelected.png">
+    <Compile Include="images\CloseSelected.png">
       <Name>CloseSelected</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>

@@ -12,9 +12,12 @@ namespace GreedySnakeCocos2d.Classes
      * Author: Tan Tian Xiang
      * Date: 2013.3.10
      */
-    class GestureLayer : CCLayer
+    class GestureLayer : CCLayer, Observerable
     {
         CCLabelTTF title;
+
+        // The list of the observer.
+        List<Observer> observerList;
 
         public override bool init()
         {
@@ -31,7 +34,10 @@ namespace GreedySnakeCocos2d.Classes
             TouchPanel.EnabledGestures = GestureType.HorizontalDrag
                                                          | GestureType.VerticalDrag;
 
+            observerList = new List<Observer>();
+
             this.schedule(gestureRecognize);
+
             return true;
         }
 
@@ -72,6 +78,22 @@ namespace GreedySnakeCocos2d.Classes
                         }
                 }
             }
+        }
+
+        public void addObserver(Observer o)
+        {
+            observerList.Add(o);
+        }
+
+        public void deleteObserver(Observer o)
+        {
+            observerList.Remove(o);
+        }
+
+        public void notifyObserver()
+        {
+            foreach (Observer o in observerList)
+                o.update(this);
         }
     }
 }
