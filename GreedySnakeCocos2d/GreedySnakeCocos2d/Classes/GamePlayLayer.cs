@@ -12,7 +12,7 @@ namespace GreedySnakeCocos2d.Classes
      * Author: Tan Tian Xiang
      * Date: 2013.3.10
      */
-    class GamePlayLayer : CCLayer
+    class GamePlayLayer : CCLayer, Observer
     {
         // Basic configure of the game.
         private const int WIDTH = 12;
@@ -70,7 +70,7 @@ namespace GreedySnakeCocos2d.Classes
             return true;
         }
 
-        public static new CCLayer node()
+        public static new GamePlayLayer node()
         {
             GamePlayLayer layer = new GamePlayLayer();
 
@@ -104,6 +104,11 @@ namespace GreedySnakeCocos2d.Classes
             // If player is dead, end the game.
             if (playerSnake.isDead())
                 CCDirector.sharedDirector().replaceScene(new GameOverScene());
+        }
+
+        public void update(object obj)
+        {
+            playerSnake.setDirection(((GestureLayer)obj).getDirection());
         }
     }
 }

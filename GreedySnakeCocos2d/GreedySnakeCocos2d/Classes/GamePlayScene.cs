@@ -29,8 +29,14 @@ namespace GreedySnakeCocos2d.Classes
         {
             base.onEnter();
             CCLayerColor colorLayer = CCLayerColor.layerWithColor(new ccColor4B(181, 230, 29, 255));
+            GamePlayLayer gamePlayLayer = GamePlayLayer.node();
+            GestureLayer gestureLayer = GestureLayer.node();
+
+            gestureLayer.addObserver(gamePlayLayer);
+
             this.addChild(colorLayer);
-            this.addChild(GamePlayLayer.node());
+            this.addChild(gestureLayer);
+            this.addChild(gamePlayLayer);
         }
     }
 }

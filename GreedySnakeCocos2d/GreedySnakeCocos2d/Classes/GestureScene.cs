@@ -13,8 +13,6 @@ namespace GreedySnakeCocos2d.Classes
      */
     class GestureScene : CCScene
     {
-        
-
         public GestureScene()
         {
             this.addChild(GestureLayer.node());
