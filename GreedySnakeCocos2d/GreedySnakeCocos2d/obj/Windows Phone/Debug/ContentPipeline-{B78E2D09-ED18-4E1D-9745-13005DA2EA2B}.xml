@@ -154,6 +154,15 @@
       <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\CloseSelected.xnb</Output>
       <Time>2013-03-10T12:18:26.3738599+08:00</Time>
     </Item>
+    <Item>
+      <Source>images\Sprite\Food.png</Source>
+      <Name>images\Sprite\Food</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Sprite\Food.xnb</Output>
+      <Time>2013-03-15T03:15:59.619837+08:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{B78E2D09-ED18-4E1D-9745-13005DA2EA2B}</ContentProjectGUID>

@@ -22,7 +22,6 @@ namespace GreedySnakeCocos2d.Classes
 
         // The direction that the layer recognize.
         Direction direction;
-        bool changed;
 
         public override bool init()
         {
@@ -36,12 +35,11 @@ namespace GreedySnakeCocos2d.Classes
             this.addChild(title);
 
             // Enable the gesture.
-            TouchPanel.EnabledGestures = GestureType.HorizontalDrag
-                                                         | GestureType.VerticalDrag;
+            TouchPanel.EnabledGestures = GestureType.VerticalDrag
+                                                        | GestureType.HorizontalDrag;
 
             observerList = new List<Observer>();
-            
-            this.changed = false;
+
             this.direction = Direction.Down;
 
             this.schedule(gestureRecognize);
@@ -63,54 +61,47 @@ namespace GreedySnakeCocos2d.Classes
 
         void gestureRecognize(float dt)
         {
-            this.changed = false;
             while (TouchPanel.IsGestureAvailable)
             {
                 GestureSample gesture = TouchPanel.ReadGesture();
+
                 switch (gesture.GestureType)
                 {
                     case GestureType.HorizontalDrag:
                     {
-                        // If the changed has not been update to the player snake.
-                        if (changed) break;
-
                         if (gesture.Delta.X > 0)
                         {
                             direction = Direction.Right;
                             title.setString("Right");
                         }
-                        else
+                        else if (gesture.Delta.X < 0)
                         {
                             direction = Direction.Left;
                             title.setString("Left");
                         }
-                        changed = true;
+                        
                         this.notifyObserver();
                         break;
                     }
                     case GestureType.VerticalDrag:
                     {
-                        // If the changed has not been update to the player snake.
-                        if (changed) break;
-
                         if (gesture.Delta.Y > 0)
                         {
                             direction = Direction.Down;
                             title.setString("Down");
                         }
-                        else
+                        else if (gesture.Delta.Y < 0)
                         {
                             direction = Direction.Up;
                             title.setString("Up");
                         }
-                        changed = true;
+
                         this.notifyObserver();
                         break;
                     }
                     default:
                     {
-                            if(!changed)
-                                title.setString("default");
+                            title.setString("default");
                             break;
                     }
                 }
@@ -120,7 +111,6 @@ namespace GreedySnakeCocos2d.Classes
         // Get the direction recognize by the layer.
         public Direction getDirection()
         {
-            this.changed = false;
             return this.direction;
         }
 

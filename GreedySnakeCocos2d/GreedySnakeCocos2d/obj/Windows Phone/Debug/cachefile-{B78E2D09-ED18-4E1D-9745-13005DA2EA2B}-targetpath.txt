@@ -15,3 +15,4 @@ Content\images\Sprite\PlayerSnakeBody.xnb
 Content\images\Sprite\PlayerSnakeHead.xnb
 Content\images\Sprite\Wall.xnb
 Content\images\CloseSelected.xnb
+Content\images\Sprite\Food.xnb

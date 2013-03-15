@@ -56,3 +56,4 @@ C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\
 C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Sprite\PlayerSnakeHead.xnb
 C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Sprite\Wall.xnb
 C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\CloseSelected.xnb
+C:\Users\Tan\Documents\GitHub\GreedySnake\GreedySnakeCocos2d\GreedySnakeCocos2d\bin\Windows Phone\Debug\Content\images\Sprite\Food.xnb

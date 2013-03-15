@@ -17,11 +17,12 @@ namespace GreedySnakeCocos2d.Classes
         // Basic configure of the game.
         private const int WIDTH = 12;
         private const int HEIGHT = 12;
-        private const int UPDATE_INTERVAL = 30;
+        private const int UPDATE_INTERVAL = 10;
 
         // Sprites in the game.
         private List<CCSprite> walls;
         private PlayerSnake playerSnake;
+        private Food food;
 
         // Configure data in the game.
         private int updateTime;
@@ -57,17 +58,47 @@ namespace GreedySnakeCocos2d.Classes
 
             // Add player snake to the game.
             playerSnake = new PlayerSnake("images/Sprite/PlayerSnakeHead", "images/Sprite/PlayerSnakeBody",
-                Direction.Right, new CCPoint(220, 580), 5, 40);
+                Direction.Right, new CCPoint(220, 380), 5, 40);
 
             List<CCSprite> bodyList = playerSnake.getBodySprite();
 
             foreach (CCSprite body in bodyList)
                 this.addChild(body);
 
+            // Add food to the game.
+            this.addFood();
 
-            this.schedule(updates);
+            this.schedule(updateTicks);
 
             return true;
+        }
+
+        /*
+         * Add the food to the field.
+         */
+        public void addFood()
+        {
+            Random rand = new Random();
+
+            int x, y;
+            bool occupy = false;
+
+            do
+            {
+                occupy = false;
+
+                x = rand.Next(GamePlayLayer.WIDTH - 2) * 40 + 60;
+                y = rand.Next(GamePlayLayer.HEIGHT - 2) * 40 + 220;
+
+                foreach (CCPoint body in playerSnake.getPositions())
+                {
+                    if (body.x == x && body.y == y)
+                        occupy = true;
+                }
+            } while (occupy);
+
+            food = new Food(1, new CCPoint(x, y));
+            this.addChild(food);
         }
 
         public static new GamePlayLayer node()
@@ -80,7 +111,8 @@ namespace GreedySnakeCocos2d.Classes
                 return null;
         }
 
-        private void updates(float dt)
+        // This function is updated every tick.
+        private void updateTicks(float dt)
         {
             if (this.updateTime < UPDATE_INTERVAL)
             {
@@ -98,6 +130,15 @@ namespace GreedySnakeCocos2d.Classes
                     if (wall.position.x == head.x && wall.position.y == head.y)
                         playerSnake.die();
                 }
+
+                if (head.x == food.position.x && head.y == food.position.y)
+                {
+                    playerSnake.addPoint(food.getAward());
+                    playerSnake.append();
+                    this.addChild(playerSnake.getTail());
+                    this.removeChild(food, false);
+                    this.addFood();
+                }
                 this.updateTime = 0;
             }
 
@@ -106,6 +147,7 @@ namespace GreedySnakeCocos2d.Classes
                 CCDirector.sharedDirector().replaceScene(new GameOverScene());
         }
 
+        // The implementation of the interface oberserver.
         public void update(object obj)
         {
             playerSnake.setDirection(((GestureLayer)obj).getDirection());
