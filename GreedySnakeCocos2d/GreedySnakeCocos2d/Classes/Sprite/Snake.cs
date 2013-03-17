@@ -13,7 +13,8 @@ namespace GreedySnakeCocos2d.Classes.Sprite
         Up = 0,
         Right,
         Down,
-        Left
+        Left,
+        None
     }
 
     /*
@@ -72,7 +73,7 @@ namespace GreedySnakeCocos2d.Classes.Sprite
                     tempPosition.y += stepLength * i;
                 else if (direction == Direction.Left)
                     tempPosition.x += stepLength * i;
-                else
+                else if (direction == Direction.Right)
                     tempPosition.x -= stepLength * i;
 
                 bodySprite.position = tempPosition;
@@ -159,7 +160,7 @@ namespace GreedySnakeCocos2d.Classes.Sprite
                 tempPosition.y -= stepLength;
             else if (direction == Direction.Right)
                 tempPosition.x += stepLength;
-            else
+            else if (direction == Direction.Left)
                 tempPosition.x -= stepLength;
 
             bodyList[0].position = tempPosition;

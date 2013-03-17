@@ -40,7 +40,7 @@ namespace GreedySnakeCocos2d.Classes
 
             observerList = new List<Observer>();
 
-            this.direction = Direction.Down;
+            this.direction = Direction.None;
 
             this.schedule(gestureRecognize);
 

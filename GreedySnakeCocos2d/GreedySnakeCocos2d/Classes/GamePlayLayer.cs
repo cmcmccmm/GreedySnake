@@ -42,14 +42,14 @@ namespace GreedySnakeCocos2d.Classes
 
             for (int i = 0; i < GamePlayLayer.HEIGHT; i++)
             {
-                walls.Add(WallFactory.createWall(new CCPoint(20, 180 + 40 * i)));
-                walls.Add(WallFactory.createWall(new CCPoint(460, 180 + 40 * i)));
+                walls.Add(new Wall(new CCPoint(20, 180 + 40 * i)));
+                walls.Add(new Wall(new CCPoint(460, 180 + 40 * i)));
             }
 
             for (int i = 0; i < GamePlayLayer.WIDTH - 2; i++)
             {
-                walls.Add(WallFactory.createWall(new CCPoint(60 + 40 * i, 180)));
-                walls.Add(WallFactory.createWall(new CCPoint(60 + 40 * i, 620)));
+                walls.Add(new Wall(new CCPoint(60 + 40 * i, 180)));
+                walls.Add(new Wall(new CCPoint(60 + 40 * i, 620)));
             }
 
             // Add the wall to the game field.
