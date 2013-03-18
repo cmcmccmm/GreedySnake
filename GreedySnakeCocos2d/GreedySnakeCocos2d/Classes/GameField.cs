@@ -24,8 +24,7 @@ namespace GreedySnakeCocos2d.Classes
 
         public void initializeGame()
         {
-            playerSnake = new PlayerSnake("images/Sprite/PlayerSnakeHead", "images/Sprite/PlayerSnakeBody", 
-                Direction.Left, new CCPoint(220, 380), 5, 40);
+            playerSnake = new PlayerSnake(Direction.Left, 5, 5, 5);
         }
 
         // Update the things in the field when called.
@@ -41,10 +40,10 @@ namespace GreedySnakeCocos2d.Classes
                 return true;
 
             // Check whether the snake crash into the wall or not.
-            CCPoint headPosition = s.getHeadPosition();
+            gsSprite head = s.getHeadPosition();
 
-            if (headPosition.x == 0 || headPosition.x == WIDTH
-                || headPosition.y == 0 || headPosition.y == HEIGHT)
+            if (head.gsX == 0 || head.gsX == WIDTH
+                || head.gsX == 0 || head.gsY == HEIGHT)
             {
                 s.die();
                 return true;

@@ -13,8 +13,8 @@ namespace GreedySnakeCocos2d.Classes.Sprite
      */
     class PlayerSnake : Snake
     {
-        public PlayerSnake(string headImageFile, string bodyImageFile, Direction direction, CCPoint initPosition, int length, int stepLength)
-            : base(headImageFile, bodyImageFile, direction, initPosition, length, stepLength)
+        public PlayerSnake(Direction direction, int initX, int initY, int length)
+            : base(GameData.PlayerSnakeHeadImageFile, GameData.PlayerSnakeBodyImageFile, direction, initX, initY, length)
         {
 
         }

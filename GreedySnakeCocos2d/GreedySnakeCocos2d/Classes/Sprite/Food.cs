@@ -6,16 +6,15 @@ using cocos2d;
 
 namespace GreedySnakeCocos2d.Classes.Sprite
 {
-    class Food : CCSprite
+    class Food : gsSprite
     {
         // The score the snake will get when eat the food.
         protected int award;
 
-        public Food(int award, CCPoint position)
+        public Food(int award, int initX, int initY)
+            : base(GameData.FoodImageFile, initX, initY)
         {
             this.award = award;
-            this.initWithFile("images/Sprite/Food");
-            this.position = position;
         }
 
         public int getAward()

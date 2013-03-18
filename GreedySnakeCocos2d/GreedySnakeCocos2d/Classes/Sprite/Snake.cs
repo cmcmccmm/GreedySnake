@@ -25,7 +25,7 @@ namespace GreedySnakeCocos2d.Classes.Sprite
     class Snake
     {
         // The list record the body of the snake.
-        protected List<CCSprite> bodyList;
+        protected List<gsSprite> bodyList;
 
         // The string record the head image file and the body image file.
         protected string headImageFile;
@@ -33,9 +33,6 @@ namespace GreedySnakeCocos2d.Classes.Sprite
 
         // The direction that the snake face to.
         Direction direction;
-        
-        // The length that the snake step in one turn.
-        protected int stepLength;
 
         // Record the score the snake get.
         protected int score;
@@ -44,74 +41,60 @@ namespace GreedySnakeCocos2d.Classes.Sprite
         protected bool dead;
 
         // Record the tail position before the move.
-        protected CCPoint tailPosition;
+        protected int tailPositionX;
+        protected int tailPositionY;
 
         // A full constructor.
-        public Snake(string headImageFile, string bodyImageFile, Direction direction, CCPoint initPosition, int length, int stepLength)
+        public Snake(string headImageFile, string bodyImageFile, Direction direction, int initX, int initY, int length)
         {
             this.headImageFile = headImageFile;
             this.bodyImageFile = bodyImageFile;
             this.direction = direction;
-            this.stepLength = stepLength;
             this.dead = false;
             this.score = 0;
-            this.bodyList = new List<CCSprite>();
+            this.bodyList = new List<gsSprite>();
 
-            CCSprite bodySprite = CCSprite.spriteWithFile(headImageFile);
-            bodySprite.position = initPosition;
+            gsSprite bodySprite = new gsSprite(headImageFile, initX, initY); 
             bodyList.Add(bodySprite);
 
-            CCPoint tempPosition;
+            int tempPositionX, tempPositionY;
+            tempPositionX = initX;
+            tempPositionY = initY;
+
             for (int i = 1; i < length; i++)
             {
-                bodySprite = CCSprite.spriteWithFile(bodyImageFile);
-                tempPosition = new CCPoint(initPosition.x, initPosition.y);
-
                 if (direction == Direction.Up)
-                    tempPosition.y -= stepLength * i;
+                    tempPositionY -=  1;
                 else if (direction == Direction.Down)
-                    tempPosition.y += stepLength * i;
+                    tempPositionY += 1;
                 else if (direction == Direction.Left)
-                    tempPosition.x += stepLength * i;
+                    tempPositionX += 1;
                 else if (direction == Direction.Right)
-                    tempPosition.x -= stepLength * i;
+                    tempPositionX -= 1;
 
-                bodySprite.position = tempPosition;
+                bodySprite = new gsSprite(bodyImageFile, tempPositionX, tempPositionY);
 
                 bodyList.Add(bodySprite);
             }
 
-            this.tailPosition = new CCPoint(bodyList[bodyList.Count - 1].position.x, 
-                bodyList[bodyList.Count - 1].position.y);
+            this.tailPositionX = bodyList[bodyList.Count - 1].gsX;
+            this.tailPositionY = bodyList[bodyList.Count - 1].gsY;
         }
 
         // Get the sprite of the snake.
-        public List<CCSprite> getBodySprite()
+        public List<gsSprite> getBodySprite()
         {
             return bodyList;
         }
 
-        // Get the positions of the body.
-        public List<CCPoint> getPositions()
+        // Get the head sprite.
+        public gsSprite getHeadPosition()
         {
-            List<CCPoint> positions = new List<CCPoint>();
-
-            for (int i = 0; i < bodyList.Count; i++)
-            {
-                positions.Add((bodyList[i].position));
-            }
-
-            return positions;
-        }
-
-        // Get the head position.
-        public CCPoint getHeadPosition()
-        {
-            return bodyList[0].position;
+            return bodyList[0];
         }
 
         // Get the tail position.
-        public CCSprite getTail()
+        public gsSprite getTail()
         {
             return bodyList[bodyList.Count - 1];
         }
@@ -136,52 +119,36 @@ namespace GreedySnakeCocos2d.Classes.Sprite
         public void move()
         {
             // Record the tail position
-            this.tailPosition = new CCPoint(bodyList[bodyList.Count - 1].position.x,
-                bodyList[bodyList.Count - 1].position.y);
+            this.tailPositionX = bodyList[bodyList.Count - 1].gsX;
+            this.tailPositionY = bodyList[bodyList.Count - 1].gsY;
 
             // Move the body of the snake except for the head.
-            int length = bodyList.Count;
-            CCPoint prevPosition = bodyList[0].position;
-            CCPoint tempPosition;
-
-            for (int i = 1; i < length; i++ )
+            for (int i = bodyList.Count - 1; i > 0; i--)
             {
-                tempPosition = bodyList[i].position;
-                bodyList[i].position = prevPosition;
-                prevPosition = tempPosition;
+                bodyList[i].gsX = bodyList[i - 1].gsX;
+                bodyList[i].gsY = bodyList[i - 1].gsY;
             }
 
-            // Move the snake.
-            tempPosition = new CCPoint(bodyList[0].position.x, bodyList[0].position.y);
-
+            // Move the head.
             if (direction == Direction.Up)
-                tempPosition.y += stepLength;
+                bodyList[0].gsY += 1;
             else if (direction == Direction.Down)
-                tempPosition.y -= stepLength;
+                bodyList[0].gsY -= 1;
             else if (direction == Direction.Right)
-                tempPosition.x += stepLength;
+                bodyList[0].gsX += 1;
             else if (direction == Direction.Left)
-                tempPosition.x -= stepLength;
+                bodyList[0].gsX -= 1;
 
-            bodyList[0].position = tempPosition;
             this.checkBiteItself();
         }
 
         // Append the snake.
         public void append()
         {
-            CCSprite newTail = CCSprite.spriteWithFile(bodyImageFile);
-            newTail.position = tailPosition;
-            bodyList.Add(newTail);
+            bodyList.Add(new gsSprite(bodyImageFile, tailPositionX, tailPositionY));
 
             // Check the snake bite its tail or not.
-            CCPoint headPosition = bodyList[0].position;
-
-            if (headPosition.x == tailPosition.x 
-                && headPosition.y == tailPosition.y)
-            {
-                this.die();
-            }
+            this.checkBiteItself();
         }
 
         // Judge the snake die or not.
@@ -204,12 +171,10 @@ namespace GreedySnakeCocos2d.Classes.Sprite
         // Check the snake bite it self or not.
         protected bool checkBiteItself()
         {
-            CCPoint head = bodyList[0].position;
-
             for (int i = 1; i < bodyList.Count; i++)
             {
-                if (head.x == bodyList[i].position.x
-                    && head.y == bodyList[i].position.y)
+                if (bodyList[0].gsX == bodyList[i].gsX
+                    && bodyList[0].gsY == bodyList[i].gsY)
                 {
                     this.die();
                     return true;

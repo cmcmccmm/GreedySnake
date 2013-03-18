@@ -11,12 +11,11 @@ namespace GreedySnakeCocos2d.Classes.Sprite
      * Author: Tan Tian Xiang
      * Date: 2013.3.14
      */
-    class Wall : CCSprite
+    class Wall : gsSprite
     {
-        public Wall(CCPoint point)
+        public Wall(int x, int y)
+            : base(GameData.wallImageFile, x, y)
         {
-            this.initWithFile("images/Sprite/Wall");
-            this.position = point;
         }
     }
 }

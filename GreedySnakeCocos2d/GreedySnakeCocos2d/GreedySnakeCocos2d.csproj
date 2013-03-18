@@ -70,7 +70,7 @@
     <Compile Include="Classes\BackgroundLayer.cs" />
     <Compile Include="Classes\GameField.cs" />
     <Compile Include="Classes\GameOverScene.cs" />
-    <Compile Include="Classes\GameSetting.cs" />
+    <Compile Include="Classes\GameData.cs" />
     <Compile Include="Classes\GestureLayer.cs" />
     <Compile Include="Classes\GestureScene.cs" />
     <Compile Include="Classes\HelloWorldScene.cs" />
@@ -80,6 +80,7 @@
     <Compile Include="Classes\MainMenuScene.cs" />
     <Compile Include="Classes\ObserverPattern.cs" />
     <Compile Include="Classes\Sprite\Food.cs" />
+    <Compile Include="Classes\Sprite\gsSprite.cs" />
     <Compile Include="Classes\Sprite\PlayerSnake.cs" />
     <Compile Include="Classes\Sprite\Snake.cs" />
     <Compile Include="Classes\Sprite\Wall.cs" />

@@ -20,7 +20,7 @@ namespace GreedySnakeCocos2d.Classes
         private const int UPDATE_INTERVAL = 10;
 
         // Sprites in the game.
-        private List<CCSprite> walls;
+        private List<Wall> walls;
         private PlayerSnake playerSnake;
         private Food food;
 
@@ -38,31 +38,30 @@ namespace GreedySnakeCocos2d.Classes
             updateTime = 0;
 
             // Create walls.
-            walls = new List<CCSprite>();
-
+            walls = new List<Wall>();
+            
             for (int i = 0; i < GamePlayLayer.HEIGHT; i++)
             {
-                walls.Add(new Wall(new CCPoint(20, 180 + 40 * i)));
-                walls.Add(new Wall(new CCPoint(460, 180 + 40 * i)));
+                walls.Add(new Wall(0, i));
+                walls.Add(new Wall(11, i));
             }
-
+            
             for (int i = 0; i < GamePlayLayer.WIDTH - 2; i++)
             {
-                walls.Add(new Wall(new CCPoint(60 + 40 * i, 180)));
-                walls.Add(new Wall(new CCPoint(60 + 40 * i, 620)));
+                walls.Add(new Wall(i + 1, 0));
+                walls.Add(new Wall(i + 1, 11));
             }
-
+            
             // Add the wall to the game field.
-            foreach(CCSprite wall in walls)
+            foreach(Wall wall in walls)
                 this.addChild(wall);
 
             // Add player snake to the game.
-            playerSnake = new PlayerSnake("images/Sprite/PlayerSnakeHead", "images/Sprite/PlayerSnakeBody",
-                Direction.Right, new CCPoint(220, 380), 5, 40);
+            playerSnake = new PlayerSnake(Direction.Right, 5, 5, 4);
 
-            List<CCSprite> bodyList = playerSnake.getBodySprite();
+            List<gsSprite> bodyList = playerSnake.getBodySprite();
 
-            foreach (CCSprite body in bodyList)
+            foreach (gsSprite body in bodyList)
                 this.addChild(body);
 
             // Add food to the game.
@@ -83,24 +82,26 @@ namespace GreedySnakeCocos2d.Classes
             int x, y;
             bool occupy = false;
 
+            List<gsSprite> playerSnakeSprite = playerSnake.getBodySprite();
+
             do
             {
                 occupy = false;
 
-                x = rand.Next(GamePlayLayer.WIDTH - 2) * 40 + 60;
-                y = rand.Next(GamePlayLayer.HEIGHT - 2) * 40 + 220;
+                x = rand.Next(GamePlayLayer.WIDTH - 2) + 1;
+                y = rand.Next(GamePlayLayer.HEIGHT - 2) + 1;
 
-                foreach (CCPoint body in playerSnake.getPositions())
+                foreach (gsSprite body in playerSnakeSprite)
                 {
-                    if (body.x == x && body.y == y)
+                    if (body.gsX == x && body.gsY == y)
                         occupy = true;
                 }
             } while (occupy);
 
-            food = new Food(1, new CCPoint(x, y));
+            food = new Food(1, x, y);
             this.addChild(food);
         }
-
+        
         public static new GamePlayLayer node()
         {
             GamePlayLayer layer = new GamePlayLayer();
@@ -124,14 +125,15 @@ namespace GreedySnakeCocos2d.Classes
                 playerSnake.move();
 
                 // Check the player crash into the wall or not.
-                CCPoint head = playerSnake.getHeadPosition();
-                foreach (CCSprite wall in walls)
+                gsSprite head = playerSnake.getHeadPosition();
+
+                foreach (gsSprite wall in walls)
                 {
-                    if (wall.position.x == head.x && wall.position.y == head.y)
+                    if (wall.gsX == head.gsX && wall.gsY == head.gsY)
                         playerSnake.die();
                 }
 
-                if (head.x == food.position.x && head.y == food.position.y)
+                if (head.gsX == food.gsX && head.gsY == food.gsY)
                 {
                     playerSnake.addPoint(food.getAward());
                     playerSnake.append();
