@@ -27,6 +27,39 @@ namespace GreedySnakeCocos2d.Classes
         // Configure data in the game.
         private int updateTime;
 
+        internal GreedySnakeCocos2d.Classes.Sprite.Food Food
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        internal GreedySnakeCocos2d.Classes.Sprite.Wall Wall
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        internal GreedySnakeCocos2d.Classes.Sprite.PlayerSnake PlayerSnake
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public override bool init()
         {
             if (!base.init())

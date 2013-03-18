@@ -8,6 +8,7 @@ namespace GreedySnakeCocos2d.Classes
 {
     class MainMenuLayer : CCLayer
     {
+    
         public override bool init()
         {
             if (!base.init())

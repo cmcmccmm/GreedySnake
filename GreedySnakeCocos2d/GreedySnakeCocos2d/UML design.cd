@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GreedySnakeCocos2d.Classes.Sprite.gsSprite" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Classes\Sprite\gsSprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GreedySnakeCocos2d.Classes.Sprite.Food" Collapsed="true">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Sprite\Food.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GreedySnakeCocos2d.Classes.Sprite.Snake" Collapsed="true">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <Members>
+      <Property Name="gsSprite" Hidden="true" />
+    </Members>
+    <AssociationLine Name="gsSprite1" Type="GreedySnakeCocos2d.Classes.Sprite.gsSprite" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.75" Y="4.374" />
+        <Point X="1.5" Y="4.374" />
+        <Point X="1.5" Y="3.189" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAhAKBCAAIACAAAAIAAAAADMAAIAIAGEAAAAAAAA=</HashCode>
+      <FileName>Classes\Sprite\Snake.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="gsSprite" />
+      <Property Name="gsSprite1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GreedySnakeCocos2d.Classes.Sprite.Wall" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Sprite\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GreedySnakeCocos2d.Classes.Sprite.PlayerSnake" Collapsed="true">
+    <Position X="2.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Sprite\PlayerSnake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GreedySnakeCocos2d.Classes.GamePlayLayer" Collapsed="true">
+    <Position X="6.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAAAAAAAAAAAAAAAAAAQAAIAQAAwYAAIAQAgBEAAI=</HashCode>
+      <FileName>Classes\GamePlayLayer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Food" />
+      <Property Name="Wall" />
+      <Property Name="PlayerSnake" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GreedySnakeCocos2d.Classes.GamePlayScene" Collapsed="true">
+    <Position X="7.75" Y="1" Width="1.5" />
+    <AssociationLine Name="GestureLayer" Type="GreedySnakeCocos2d.Classes.GestureLayer" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.25" Y="1.312" />
+        <Point X="9.875" Y="1.312" />
+        <Point X="9.875" Y="2.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="GamePlayLayer" Type="GreedySnakeCocos2d.Classes.GamePlayLayer" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="1.312" />
+        <Point X="6.875" Y="1.312" />
+        <Point X="6.875" Y="2.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Classes\GamePlayScene.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GestureLayer" />
+      <Property Name="GamePlayLayer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GreedySnakeCocos2d.Classes.GestureLayer" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAggAQAAAIAAAQAAAAAAAAAIAAAIAAAAAAAEAAAA=</HashCode>
+      <FileName>Classes\GestureLayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GreedySnakeCocos2d.Classes.MainMenuScene" Collapsed="true">
+    <Position X="11.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAACAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Classes\MainMenuScene.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainMenuLayer" />
+      <Property Name="BackgroundLayer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GreedySnakeCocos2d.Classes.MainMenuLayer" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUAAAAAQAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\MainMenuLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GreedySnakeCocos2d.Classes.BackgroundLayer" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\BackgroundLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GreedySnakeCocos2d.Classes.GameOverScene" Collapsed="true">
+    <Position X="11.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Classes\GameOverScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

@@ -24,6 +24,27 @@ namespace GreedySnakeCocos2d.Classes
      */
     class GamePlayScene : CCScene
     {
+        internal GestureLayer GestureLayer
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        internal GamePlayLayer GamePlayLayer
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
         // When the scene is loaded, execute the following code.
         public override void onEnter()
         {

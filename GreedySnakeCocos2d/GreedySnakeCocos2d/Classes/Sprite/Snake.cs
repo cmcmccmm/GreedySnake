@@ -81,6 +81,28 @@ namespace GreedySnakeCocos2d.Classes.Sprite
             this.tailPositionY = bodyList[bodyList.Count - 1].gsY;
         }
 
+        internal gsSprite gsSprite
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        internal gsSprite gsSprite1
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         // Get the sprite of the snake.
         public List<gsSprite> getBodySprite()
         {
